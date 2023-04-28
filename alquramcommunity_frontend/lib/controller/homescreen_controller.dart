@@ -3,7 +3,9 @@ import 'package:flutter/services.dart';
 import 'package:get/get.dart';
 
 import '../view/screen/home.dart';
+import '../view/screen/lists.dart';
 import '../view/screen/pray.dart';
+import '../view/screen/profile.dart';
 import '../view/screen/qibla.dart';
 import '../view/screen/thikr.dart';
 import '../view/screen/tasbeh.dart';
@@ -39,13 +41,13 @@ class HomeScreenControllerImp extends HomeScreenController {
 
   List<Widget> listPage = [
     Container(
-      child: Center(child: Text("Profile")),
+      child: Center(child: ProfileScreen()),
     ),
     Container(
       child: Center(child: Text("\uFD3E" + "1" + "\uFD3F")),
     ),
     Container(
-      child: Center(child: Text("Lists")),
+      child: Center(child: ListsScreen()),
     ),
     Container(
       child: Center(child: Text("")),
@@ -70,5 +72,6 @@ class HomeScreenControllerImp extends HomeScreenController {
     currentPage = index;
     content = listPage[index].obs;
     update();
+    print("change page");
   }
 }

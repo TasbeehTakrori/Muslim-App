@@ -79,6 +79,11 @@ dependencies:
 
   circular_countdown_timer: ^0.2.3
   custom_sliding_segmented_control: ^1.7.4
+  awesome_dialog: ^3.0.2
+  audioplayers: ^4.0.1
+  firebase_messaging: ^14.4.1
+  flutter_qiblah: ^2.1.0
+  provider: ^5.0.0
 
 
 dev_dependencies:
@@ -124,7 +129,10 @@ flutter:
     - assets/images/dashboard.png
     - assets/images/2840.jpg
     - assets/images/mosqueLine.png
+    - assets/images/profile.png
     - assets/
+
+    
     
 
 
@@ -154,8 +162,8 @@ flutter:
 
     - family: Quran
       fonts:
-        - asset: assets/fonts/Quran/UthmanicHafs_V20.ttf
-          weight: 900
+        - asset: assets/fonts/Quran/Hafs.ttf
+          weight: 700
 
     - family: SurahTitle
       fonts:

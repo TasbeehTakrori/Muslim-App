@@ -17,7 +17,7 @@ class QuranScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     SystemChrome.setEnabledSystemUIMode(SystemUiMode.immersiveSticky);
 
-    //final  quranController = Get.put(QuranPageController());
+    // Get.put(QuranPageController());
 
     return GetBuilder<QuranPageController>(builder: (controller) {
       return WillPopScope(
@@ -70,7 +70,7 @@ class QuranScreen extends StatelessWidget {
                     }),
                 controller.getIndex() == 1
                     ? SizedBox(
-                        width: 500,
+                        width: MediaQuery.of(context).size.height,
                         height: MediaQuery.of(context).size.height - 80,
                         child: PageView.builder(
                             onPageChanged: (index) {

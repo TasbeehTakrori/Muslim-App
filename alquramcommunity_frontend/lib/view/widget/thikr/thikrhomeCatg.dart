@@ -12,7 +12,7 @@ class ThikrHomeCard2 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GridView.count(
-      childAspectRatio: 0.9,
+      childAspectRatio: 1,
       physics: const NeverScrollableScrollPhysics(),
       crossAxisCount: 2,
       shrinkWrap: true,
@@ -22,7 +22,7 @@ class ThikrHomeCard2 extends StatelessWidget {
             padding: const EdgeInsets.only(left: 15, right: 15, top: 7),
             margin: const EdgeInsets.symmetric(vertical: 8, horizontal: 12),
             decoration: BoxDecoration(
-              color: AppColor.lightgreen,
+              color: AppColor.lightYellow,
               borderRadius: BorderRadius.circular(20),
             ),
             child: Column(
@@ -32,6 +32,7 @@ class ThikrHomeCard2 extends StatelessWidget {
                     Get.toNamed(AppRoute.thikrdetails, arguments: ['$i']);
                   },
                   child: Container(
+                    
                     margin: const EdgeInsets.only(
                         top: 2, left: 10, right: 10, bottom: 2),
                     height: 90,
@@ -40,13 +41,13 @@ class ThikrHomeCard2 extends StatelessWidget {
                   ),
                 ),
                 Container(
-                    padding: EdgeInsets.only(top: i == 2 ? 2 : 12),
+                    padding: EdgeInsets.only(top: i == 2 ? 2 : 13),
                     alignment: Alignment.bottomCenter,
                     child: Text("${ThikrCategoryList[i].title}",
                         style: TextStyle(
                             color: AppColor.black,
                             fontWeight: FontWeight.bold,
-                            fontSize: i < 5 ? 16 : 16,
+                            fontSize: i < 5 ? 14 : 14,
                             fontFamily: "Cairo"))),
               ],
             ),
